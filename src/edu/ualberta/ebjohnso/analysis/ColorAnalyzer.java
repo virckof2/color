@@ -25,10 +25,10 @@ public class ColorAnalyzer {
 	private Image orgImage;
 	private int width;
 	private int height;
-	private int[] pixels;
 
 	private void loadImage(String inFile){
 		 orgImage = Toolkit.getDefaultToolkit().getImage(inFile);
+		 PixelGrabber grabber = new PixelGrabber(orgImage, 0, 0, -1, -1, false);
 	}
 
 
@@ -56,7 +56,7 @@ public class ColorAnalyzer {
 	private Image findShade(int pixels[], int width, int height, Shade[] shadeCollection){
 
 		int totalPixels = width*height;
-
+		PixelGrabber grabber = new PixelGrabber(orgImage, 0, 0, -1, -1, false);
 		int[] pixelsMod = pixels;
 
 		for(int i=0; i < totalPixels; i++){

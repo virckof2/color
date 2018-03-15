@@ -11,9 +11,6 @@ public class Shade {
 	private String ID;
 	private int totalCount;
 	private Color highlighter;
-	private int baseRed;
-	private int baseBlue;
-	private int baseGreen;
 	private double upperWindow;
 	private double lowerWindow;
 
@@ -58,6 +55,9 @@ public class Shade {
 
 	public void setBaseBlue(int baseBlue) {
 		this.baseBlue = baseBlue;
+		private int baseRed;
+		private int baseBlue;
+		private int baseGreen;
 	}
 
 	public int getBaseGreen() {

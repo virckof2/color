@@ -61,9 +61,7 @@ public class ColorAnalyzer {
 
 		for(int i=0; i < totalPixels; i++){
 			int  c = pixelsMod[i];
-         	int  red = (c & 0x00ff0000) >> 16;
-        	int  green = (c & 0x0000ff00) >> 8;
-         	int  blue = c & 0x000000ff;
+
 
          	for(Shade shade : shadeCollection){
 
@@ -105,6 +103,9 @@ public class ColorAnalyzer {
 			}
 			else{
 				pixelSample[i] = colorLower.getRGB();
+				int  red = (c & 0x00ff0000) >> 16;
+				int  green = (c & 0x0000ff00) >> 8;
+				int  blue = c & 0x000000ff;
 			}
 		}
 

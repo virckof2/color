@@ -45,9 +45,6 @@ public class ColorAnalyzer {
 
             }
         }
-        catch (InterruptedException e1) {
-            e1.printStackTrace();
-        }
 	}
 
 	/**
